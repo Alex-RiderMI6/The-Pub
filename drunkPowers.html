@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="drunkPowers.js" async></script>
+        <title>Drunk Powers</title>
+        <audio autoplay loop="true">
+            <source src="Audio/shopMusic.mp3">
+        </audio>
+    </head>
+    <body class="mainPageBackground">
+        <div class="center">
+            <h1 style="color: greenyellow; font-size: 4vw;">Drunk Powers</h1>
+            <h1 style="color: greenyellow; font-size: 2vw;" id="playerCoins">Player Wallet: 8</h1>
+        </div>
+        <div class="divideScreen">
+            <div class="shopCard">
+                <p>Big Hit</p>
+                <div class="shopItemImage">
+                    <img src="Images/bigHit.jpg" alt="" style="width: 5vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 30</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    Use it on an enemy that really deserves it.
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="bigHitButton" onclick="testToBuy(1)">Buy</button>
+            </div>
+            <div class="shopCard">
+                <p>Heal</p>
+                <div class="shopItemImage">
+                    <img src="Images/healUp.jpg" alt="" style="width: 7vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 20</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    When you need to get more health
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="healButton" onclick="testToBuy(2)">Buy</button>
+            </div>
+            <div class="shopCard">
+                <p>Random Item</p>
+                <div class="shopItemImage">
+                    <img src="Images/randomItem.png" alt="" style="width: 5vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 35</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    After going blackout drunk, you find an item in your pocket
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="randomItemButton" onclick="testToBuy(3)">Buy</button>
+            </div>
+        </div>
+        <div class="divideScreen" style="padding-left: 10%;  padding-right: 10%;">
+            <div class="shopCard">
+                <p>Defense Up</p>
+                <div class="shopItemImage">
+                    <img src="Images/defenseUp.jpg" alt="" style="width: 5vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 15</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    So much alchocol has made you much more numb to pain
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="defenseUpButton" onclick="testToBuy(4)">Buy</button>
+            </div>
+            <div class="shopCard">
+                <p>Speed up</p>
+                <div class="shopItemImage">
+                    <img src="Images/speedUp.jpg" alt="" style="width: 7vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 15</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    Move faster to out punch the enemy
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="speedUpButton" onclick="testToBuy(5)">Buy</button>
+            </div>
+        </div>
+        <div class="center">
+            <button class="backHomeButton" onclick="location.href='homePage.html'">Home</button>
+        </div>
+    </body>
+</html>

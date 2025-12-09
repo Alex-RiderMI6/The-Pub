@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="shop.js" async></script>
+        <title>Shop</title>
+        <audio autoplay loop="true">
+            <source src="Audio/shopMusic.mp3">
+        </audio>
+    </head>
+    <body class="mainPageBackground">
+        <div class="center">
+            <h1 style="color: greenyellow; font-size: 4vw;">The Shop</h1>
+            <h1 style="color: greenyellow; font-size: 2vw;" id="playerCoins">Player Wallet: 8</h1>
+        </div>
+        <div class="divideScreen">
+            <div class="shopCard">
+                <p>Jagged Knife</p>
+                <div class="shopItemImage">
+                    <img src="Images/jaggedKnife.jpg" alt="" style="width: 5vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 3</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    A jagged knife to make someone wish they never met you
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="knifeButton" onclick="testToBuy(1)">Buy</button>
+            </div>
+            <div class="shopCard">
+                <p>Winston Churchill's actual scotch glass</p>
+                <div class="shopItemImage">
+                    <img src="Images/churchillScotchGlass.jpg" alt="" style="width: 7vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 5</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    A jagged knife to make someone wish they never met you
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="wcsgButton" onclick="testToBuy(2)">Buy</button>
+            </div>
+            <div class="shopCard">
+                <p>Steel toed Boot</p>
+                <div class="shopItemImage">
+                    <img src="Images/steelToedBoot.jpg" alt="" style="width: 5vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 2</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    A jagged knife to make someone wish they never met you
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="stbButton" onclick="testToBuy(3)">Buy</button>
+            </div>
+        </div>
+        <div class="divideScreen">
+            <div class="shopCard">
+                <p>Hiesenburg's blue crystals</p>
+                <div class="shopItemImage">
+                    <img src="Images/blueCrystals.jpg" alt="" style="width: 5vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 10</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    A guy named Jessie wants to sell you some
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="hbcButton" onclick="testToBuy(4)">Buy</button>
+            </div>
+            <div class="shopCard">
+                <p>Beer Fetching Machine</p>
+                <div class="shopItemImage">
+                    <img src="Images/beerFetchingMachine.png" alt="" style="width: 7vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 3</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    A jagged knife to make someone wish they never met you
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="bfmButton" onclick="testToBuy(5)">Buy</button>
+            </div>
+            <div class="shopCard">
+                <p>Enemy Slower</p>
+                <div class="shopItemImage">
+                    <img src="Images/slownessForEnemy.jpg" alt="" style="width: 5vw; position:relative; top: 25%;">
+                </div>
+                <p>Cost: 2</p>
+                <p style="margin: 5%; font-size: 1vw;">
+                    A jagged knife to make someone wish they never met you
+                </p>
+                <button class="shopBuyButton" style="background-color: bisque;" id="esButton" onclick="testToBuy(6)">Buy</button>
+            </div>
+        </div>
+        <div class="center">
+            <button class="backHomeButton" onclick="location.href='homePage.html'">Home</button>
+        </div>
+    </body>
+</html>

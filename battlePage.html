@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src='trueBattle.js' async></script>
+        <title>battle</title>
+        <audio autoplay loop="true">
+            <source src="Audio/brawlTheme.mp3">
+        </audio>
+    </head>
+    <body class="mainPageBackground">
+        <div class="center">
+            <p id="outputBanner" class="banner">A drunk approches</p>
+        </div>
+        
+        <div class="center">
+            <p id="enemyHealth" class="healthAndTolerance">Health: 20</p>
+            <img src="Images/averageDrunk.jpg" alt="the enemy" id="enemyPicture" width="15%" class="enemyImage" style="width: 15%; height: 25vh; overflow: hidden;">
+        </div>
+
+        <!-- drunk powers -->
+        <div id="drunkPowersSidebar" class="sideBar" style="display: none;">
+            <p style="background-color: cadetblue;">Drunk Powers</p>
+            <button class="sideBarButton" onclick="battleTurn(1)" id="bitHit">Big hit</button>
+            <button class="sideBarButton" onclick="battleTurn(2)" id="heal">heal</button>
+            <button class="sideBarButton" onclick="battleTurn(3)" id="randItem">random item</button>
+            <button class="sideBarButton" onclick="battleTurn(4)" id="defenseUp">defense up</button>
+            <button class="sideBarButton" onclick="battleTurn(5)" id="speedUp">speed up</button>
+        </div>
+
+        <!-- items  -->
+        <div id="itemsSidebar" class="sideBar" style="display: none;">
+            <p style="background-color: cadetblue;">Items</p>
+            <button class="sideBarButton" id="knifeItem" onclick="battleTurn(6)">Knife</button>
+            <button class="sideBarButton" id="wcsg" onclick="battleTurn(7)">The Scotch Glass</button>
+            <button class="sideBarButton" id="stb" onclick="battleTurn(8)">Steel Toed Boot</button>
+            <button class="sideBarButton" id="bfm" onclick="battleTurn(9)">B.F.M</button>
+            <button class="sideBarButton" id="hbc" onclick="battleTurn(10)">blue crystal</button>
+            <button class="sideBarButton" id="sed" onclick="battleTurn(11)">Make Enemy Slower</button>
+        </div>
+
+        <!--health and tolerance-->
+
+        <div class="center">
+            <div style="padding-top: 5%;">
+                <p id="playerHealth" class="healthAndTolerance">Health: 20 <br> tolerance: 10</p>
+            </div>
+            <div class="actionArea">
+                <button class="actionButton" id="fightButtons" onclick="battleTurn(0)">Fight</button>
+                <button class="actionButton" id="showItemButton" onclick="showSidebar(0)">Items</button>
+                <button class="actionButton" id="showDrunkPowersButton" onclick="showSidebar(1)">Drunk Powers</button>
+                <button class="actionButton" id="runAwayButton" onclick="runAway()">Run Away</button>
+            </div>
+        </div>
+    </body>
+</html>
