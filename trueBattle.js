@@ -66,7 +66,7 @@ class Player{
             this.normalDefense += (this.level * .5) + 4;
             this.normalSpeed += (this.level * .5) + 4;
         }
-        Audio('Audio/levelUp.mp3').play();
+        new Audio('Audio/levelUp.mp3').play();
     }
 
     toJSON(){
